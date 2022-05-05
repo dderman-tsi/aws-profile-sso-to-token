@@ -18,7 +18,8 @@ empty_string=""
 source_profile="$1"
 dest_profile="$2"
 
-if [ "$source_profile" = "$empty_string" ]; then exit_error "Source and destination profile must be supplied:\n./aws_profile_get_keys.sh <source_profile> <destination_profile>"; fi
+if [ "$source_profile" = "$empty_string" ]; then exit_error "Source and destination profiles must be supplied:\n./aws_profile_get_keys.sh <source_profile> <destination_profile>"; fi
+if [ "$source_profile" = "$dest_profile" ]; then exit_error "Source and destination profiles must be different"; fi
 
 print_message "Login with sso profile"
 aws sso login --profile $source_profile
