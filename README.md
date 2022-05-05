@@ -10,7 +10,8 @@ However, those require users to have python/pip installed whereas this one can b
 
 ## Install
 ```bash
-curl https://raw.githubusercontent.com/dderman-tsi/aws-profile-sso-to-token/main/aws-profile-sso-to-token.sh --output /usr/local/bin/aws-profile-sso-to-token.sh && chmod +x /usr/local/bin/aws-profile-sso-to-token.sh
+curl https://raw.githubusercontent.com/dderman-tsi/aws-profile-sso-to-token/main/aws-profile-sso-to-token.sh \
+  --output /usr/local/bin/aws-profile-sso-to-token.sh && chmod +x /usr/local/bin/aws-profile-sso-to-token.sh
 ```
 
 ## How to Run
