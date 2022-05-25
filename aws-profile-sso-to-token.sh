@@ -25,14 +25,14 @@ set -e
 
 exit_error() {
   RED='\033[0;31m'
-  echo -e "${RED}$1"
+  echo "${RED}$1"
   exit 1
 }
 
 print_message() {
   GREEN='\033[0;32m'
   NC='\033[0m'
-  echo -e "${GREEN}$(date '+%Y-%m-%d %T')${NC} $1"
+  echo "${GREEN}$(date '+%Y-%m-%d %T')${NC} $1"
 }
 
 empty_string=""
